@@ -1,3 +1,4 @@
+//SinglyLinkList
 public class EmployeeList {
     private EmployeeNode head;
     private int size;

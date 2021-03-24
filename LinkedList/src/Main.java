@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args){
         /**
-         *
+         * SinglyLinkList will add the node on the top of the array and remove from top
          */
         EmployeeList list = new EmployeeList();
         System.out.println("is Empty " + list.isEmpty());
