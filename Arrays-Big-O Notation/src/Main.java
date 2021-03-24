@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static  void main(String[] args){
         //array capacity is 5
@@ -47,7 +49,6 @@ public class Main {
          */
 
         System.out.println("Bubble sort");
-        //ArraySort.bubbleSort(intArray);
         var bubbleSort = new ArraySort<Integer>();
         bubbleSort.bubbleSort(intArray);
 
@@ -63,9 +64,13 @@ public class Main {
         }
 
         System.out.println("\nBubble sort string");
+
         for (int i = 0; i < arrayString.length; i++){
             System.out.println(arrayString[i]);
         }
+
+
+
 
     }
 }

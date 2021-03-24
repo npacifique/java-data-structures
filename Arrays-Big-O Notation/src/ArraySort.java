@@ -50,3 +50,8 @@ public class ArraySort<T> {
 
     }
 }
+
+
+/**
+ * here are additional resources for Java arrays : https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html
+ */
