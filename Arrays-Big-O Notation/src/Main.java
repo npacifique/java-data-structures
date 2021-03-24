@@ -1,20 +1,13 @@
 public class Main {
     public static  void main(String[] args){
         //array capacity is 5
-        int[] intArray = new int [5];
+        Integer[] intArray = new Integer [5];
 
-        intArray[0] = 3;
+        intArray[0] = 14;
         intArray[1] = 8;
         intArray[2] = -1;
         intArray[3] = 23;
         intArray[4] = 15;
-
-        //print array
-
-        for (int i = 0; i < intArray.length; i++){
-            System.out.println(intArray[i]);
-        }
-
 
 
         /**
@@ -44,7 +37,7 @@ public class Main {
 
         }
 
-        System.out.println("index = "+ index);
+        //System.out.println("index = "+ index);
 
         /**
             For Big-O notation we always consider the worse case
@@ -52,6 +45,27 @@ public class Main {
             - n = number of element
             - Big-O O(n) / Linear time
          */
+
+        System.out.println("Bubble sort");
+        //ArraySort.bubbleSort(intArray);
+        var bubbleSort = new ArraySort<Integer>();
+        bubbleSort.bubbleSort(intArray);
+
+
+        String[] arrayString = { "Z", "C", "B" , "A" };
+        var bubbleSortString = new ArraySort<String>();
+        bubbleSortString.bubbleSortString(arrayString);
+
+
+        System.out.println("\nBubble sort int");
+        for (int i = 0; i < intArray.length; i++){
+            System.out.println(intArray[i]);
+        }
+
+        System.out.println("\nBubble sort string");
+        for (int i = 0; i < arrayString.length; i++){
+            System.out.println(arrayString[i]);
+        }
 
     }
 }
